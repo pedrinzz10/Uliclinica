@@ -48,6 +48,11 @@ Tarefas que dependem de informações ou decisões da clínica. Quase todos os d
 
 - [x] **Botão flutuante de WhatsApp** — feito em 29/09.
 
+## Repositório
+
+- [x] **Controle de versão** — repositório privado em github.com/pedrinzz10/Uliclinica (01/10). As fotos originais
+  (`src/assets/funcionarios/`) ficam fora do git, pelo `.gitignore`.
+
 ## Decisões
 
 - [x] **Dr. / Dra.** — "Dra." para as profissionais.
@@ -60,7 +65,6 @@ Não fazem parte do escopo contratado por enquanto; ficam registrados para uma p
 
 - Domínio do site (necessário para a prévia ao compartilhar o link e o endereço oficial no Google).
 - Hospedagem e publicação.
-- Controle de versão (`git init`).
 - Mover as fotos originais (`src/assets/funcionarios/`, 146 MB) para fora de `src` (não são usadas pelo site).
 
 > Se endereço, telefone, horário, CNPJ ou número de especialidades mudarem, atualize `src/data.ts` **e** o `index.html`
