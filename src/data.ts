@@ -47,7 +47,7 @@ export const SERVICES = [
 export const PROFESSIONALS: { id: string; name: string; area: string; reg: string; photo?: string }[] = [
   { id: 'rui', name: 'Dr. Rui Borralho', area: 'Medicina do Trabalho e Clínica Geral', reg: 'CRM-PA 1383', photo: rui },
   { id: 'maria-cristina', name: 'Dra. Maria Cristina', area: 'Clínica Geral e Ultrassonografia', reg: 'CRM-PA 6233' },
-  { id: 'jose-alan', name: 'Dr. José Alan', area: 'Clínica Geral', reg: 'CRM-PA 19424', photo: allan },
+  { id: 'jose-alan', name: 'Dr. José Alan', area: 'Clínico Geral', reg: 'CRM-PA 19424', photo: allan },
   { id: 'erinaldo', name: 'Dr. Erinaldo', area: 'Ortopedia e Traumatologia', reg: 'CRM-PA 13831 · RQE 5299' },
   { id: 'jose-henrique', name: 'Dr. José Henrique', area: 'Ginecologia e Obstetrícia', reg: 'CRM-PA 10147' },
   { id: 'oscar', name: 'Dr. Oscar José', area: 'Fonoaudiologia', reg: 'CRFa 7951', photo: oscar },
