@@ -2,15 +2,8 @@ import { ImageSlot } from '../components/ImageSlot'
 import { Eyebrow } from '../components/ui'
 import { PROFESSIONALS } from '../data'
 
-// Iniciais do nome, sem o título (Dr./Dra.): "Dra. Maria Cristina" → "MC".
-const initials = (name: string) =>
-  name
-    .replace(/^Dra?\.\s*/, '')
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join('')
-    .toUpperCase()
+// Só aparecem na página os profissionais que já têm foto.
+const WITH_PHOTO = PROFESSIONALS.filter((p) => p.photo)
 
 export function Profissionais() {
   return (
@@ -31,16 +24,10 @@ export function Profissionais() {
       </section>
 
       <section className="card-grid card-grid--260">
-        {PROFESSIONALS.map((p) => (
+        {WITH_PHOTO.map((p) => (
           <article key={p.id} className="media-card">
             <div className="media-card__img media-card__img--portrait">
-              {p.photo ? (
-                <ImageSlot src={p.photo} alt={p.name} placeholder={p.name} />
-              ) : (
-                <div className="monogram" aria-hidden="true">
-                  {initials(p.name)}
-                </div>
-              )}
+              <ImageSlot src={p.photo} alt={p.name} placeholder={p.name} />
             </div>
             <div className="media-card__body">
               <span className="kicker">{p.area}</span>

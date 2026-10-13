@@ -60,10 +60,27 @@ export const PROFESSIONALS: { id: string; name: string; area: string; reg: strin
 export const FOUNDED_YEAR = 2010
 export const YEARS_OF_HISTORY = new Date().getFullYear() - FOUNDED_YEAR
 
+// Convênios atendidos (informados pela clínica em 01/10/2026).
+export const PARTNER_COMPANIES = [
+  'Pagrisa',
+  'Uliana',
+  'MX Serviços',
+  'Solplac',
+  'RS Terra Maq',
+  'Posto Goes',
+  'B4',
+  'Araguaia',
+  'Rabelo e Silveira',
+  'Preserve',
+  'Gusfel',
+  'Proserv Agrícola',
+  'Suzano',
+]
+
 export const DIFFERENTIALS = [
   { value: String(SERVICES.length), suffix: '', title: 'Especialidades integradas', desc: 'Da atenção primária à saúde ocupacional, com as áreas trabalhando em conjunto.' },
-  { value: String(PROFESSIONALS.length), suffix: '', title: 'Profissionais de saúde', desc: 'Corpo clínico habilitado e registrado em seus respectivos conselhos de classe.' },
   { value: String(YEARS_OF_HISTORY), suffix: '+', title: 'Anos de história', desc: `Desde ${FOUNDED_YEAR} cuidando da saúde de Ulianópolis e região.` },
+  { value: String(PARTNER_COMPANIES.length), suffix: '', title: 'Convênios atendidos', desc: 'Empresas da região que confiam na Uliclínica para cuidar de seus colaboradores.' },
   { value: '360', suffix: '°', title: 'Cuidado integrado', desc: 'Acompanhamento coordenado do diagnóstico ao tratamento e à reabilitação.' },
 ]
 
@@ -85,6 +102,9 @@ export const PORTAL_STEPS = [
 // Link do sistema de resultados. Enquanto for null, o botão do portal leva ao WhatsApp.
 export const PORTAL_URL: string | null = null
 
+// Enquanto true, abrir a página do Portal mostra um pop-up de "em manutenção" (WhatsApp ou voltar ao início).
+export const PORTAL_MAINTENANCE = true
+
 const WHATSAPP_NUMBER = '5591981394221'
 const ADDRESS_QUERY = 'Avenida Paraíba, 171, Caminho das Árvores, Ulianópolis - PA'
 
@@ -101,23 +121,6 @@ export const CONTACT = {
   facebookUrl: 'https://www.facebook.com/uliclinica',
   hours: 'Segunda a sexta · 6h30–11h e 14h–17h',
 }
-
-// Convênios atendidos (informados pela clínica em 01/10/2026).
-export const PARTNER_COMPANIES = [
-  'Pagrisa',
-  'Uliana',
-  'MX Serviços',
-  'Solplac',
-  'RS Terra Maq',
-  'Posto Goes',
-  'B4',
-  'Araguaia',
-  'Rabelo e Silveira',
-  'Preserve',
-  'Gusfel',
-  'Proserv Agrícola',
-  'Suzano',
-]
 
 export const DEVELOPER = {
   name: 'Pedro Henrique de Oliveira',

@@ -49,10 +49,6 @@ export function Home() {
                   <div className="stat-label">{'especiali­dades'}</div>
                 </div>
                 <div>
-                  <div className="stat-num">{PROFESSIONALS.length}</div>
-                  <div className="stat-label">{'profissio­nais'}</div>
-                </div>
-                <div>
                   <div className="stat-num">{YEARS_OF_HISTORY}+</div>
                   <div className="stat-label">anos de história</div>
                 </div>
@@ -186,13 +182,17 @@ export function Home() {
           </div>
           <div className="why__heading">
             <h2 className="h2-light">
-              Por que a
-              <br />
-              Uliclínica
+              Por que escolher
+              <br />a Uliclínica?
             </h2>
-            <span className="micro">
-              <strong>Corpo clínico</strong> habilitado e registrado
-            </span>
+            <div className="why__lead">
+              <p>
+                <strong>Corpo clínico habilitado e registrado</strong> — somos também a pioneira da cidade!
+              </p>
+              <p>
+                Resultados precisos e profissionais com <strong>mais de 25 anos de experiência</strong> comprovada!
+              </p>
+            </div>
           </div>
           <Callout size="sm" label="Equipe multiprofissional" style={{ left: '10%', top: '56%' }} />
           <Callout size="sm" label="Profissionais habilitados" reverse style={{ right: '10%', top: '66%' }} />
