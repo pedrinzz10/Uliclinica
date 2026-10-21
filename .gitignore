@@ -25,3 +25,6 @@ dist-ssr
 
 # Fotos originais da sessão (146 MB, não usadas pelo site — as versões otimizadas ficam em src/assets/profissionais)
 src/assets/funcionarios/
+
+# Pacote do projeto para upload na Hostinger (gerado localmente)
+uliclinica-projeto.zip
